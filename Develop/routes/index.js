@@ -5,7 +5,7 @@ const apiRouter = require('./api');
 
 const app = express();
 
-app.use('/api', apiRouter);
+app.use('/notes', apiRouter);
 
 // app.use('/', htmlRouter);
 

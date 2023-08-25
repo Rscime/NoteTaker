@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const api = require('./routes/index.js');
 
 const PORT = process.env.PORT || 3001;
 
@@ -11,13 +12,14 @@ app.use('/api', api);
 
 app.use(express.static('public'));
 
-//html routes... GET Home page
-app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/index.html'))
-);
 //html routes... GET notes page
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
+);
+
+//html routes... GET Home page
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
 app.listen(PORT, () =>
