@@ -16,7 +16,6 @@ router.get("/api/notes", async (req, res) => {
 
 
 //POST to notes @ /api/notes
-//** need to add in a incrementor */
 router.post('/api/notes', async (req,res) => {
     console.info(`${req.method} request received to add a note`);
     let newNote = {
