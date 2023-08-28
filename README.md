@@ -5,7 +5,7 @@
 Note taking application deployed as part of UCFs coding Bootcamp
 
 ## Deployed Link
-https://git.heroku.com/notetaker-app-rsg111.git
+[https://git.heroku.com/notetaker-app-rsg111.git](https://notetaker-app-rsg111-bc58c534a12e.herokuapp.com/notes)
 
 ## User Story
 
